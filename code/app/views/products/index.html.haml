@@ -1,0 +1,14 @@
+%table#products
+  %tr
+    %th Name
+    %th SKU
+    %th Location
+    %th Inventory
+    %th
+  - @products.each do |product|
+    %tr.product
+      %td= link_to product.name, resource(product)
+      %td= product.sku
+      %td== #{product.aisle} - #{product.bin}
+      %td= product.inventory
+      %td= link_to "Edit", resource(product, :edit) if current_user

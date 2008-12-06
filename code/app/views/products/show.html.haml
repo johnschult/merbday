@@ -1,0 +1,11 @@
+= link_to "Back", resource(:products)
+%br
+%br
+%h1= @product.name
+%h3= @product.sku
+Location:
+== #{@product.aisle} - #{@product.bin}
+%br
+Inventory:
+= @product.inventory
+%br

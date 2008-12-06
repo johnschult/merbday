@@ -1,0 +1,8 @@
+%p= text_field :name, :label => "Name"
+%p= text_field :sku, :label => "SKU"
+%p= text_field :aisle, :label => "Aisle"
+%p= text_field :bin, :label => "Bin"
+%p= text_field :inventory, :label => "Inventory"
+%p
+  = submit "Save"
+  == or #{link_to("go back", "javascript:history.back(1)")}
