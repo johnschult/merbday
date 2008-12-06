@@ -1,8 +1,19 @@
+= foo
+  :padding 200px
+  :margin-top 40px
+
+!green= #365662
+
+.someclass
+  :margin 20px
+
+
 body
   :font-family Arial, Verdana, sans-serif
   :font-size 12px
-  :background-color #fff
+  :background-color !green
   :margin 20px
+  +foo
 
 *
   :margin 0px

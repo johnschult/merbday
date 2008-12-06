@@ -1,3 +1,17 @@
 = form_for(@product, :action => resource(@product)) do
   = fieldset(:legend => "Edit Product") do
     = partial :fields
+    
+
+:javascript
+  function foo() {
+    alert('#{message[:notice]'})
+  }
+  
+%style
+  :sass
+    form
+      :font-size 1.2em
+      
+:markdown
+  = @post.comment
