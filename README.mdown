@@ -1,0 +1,11 @@
+### Slides
+- The presentation in PDF format is available in the **slides** directory.
+- The slides are also available on Scribd at [http://bit.ly/haml](http://bit.ly/haml).
+
+### Code
+- The application in **code** is the full **house2** application
+  after the completion of Tutorial 7.
+
+- All of the ERB tamplates have been translated into HAML.
+- The **master.css** files has been converted to SASS and
+  placed in the *public/stylesheets/sass* directory.
