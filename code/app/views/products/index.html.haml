@@ -7,7 +7,7 @@
     %th
   - @products.each do |product|
     %tr.product
-      %td= link_to product.name, resource(product)
+      %td= link_to(product.name, resource(product))
       %td= product.sku
       %td== #{product.aisle} - #{product.bin}
       %td= product.inventory
