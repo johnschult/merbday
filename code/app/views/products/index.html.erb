@@ -1,0 +1,24 @@
+<h1>Products</h1>
+
+<%= link_to "Add Product", resource(:products, :new) %>
+
+<table id="products">
+  <tr>
+    <th>Name</th>
+    <th>SKU</th>
+    <th>Location</th>
+    <th>Inventory</th>
+    
+    <th></th>
+  </tr>
+  <% @products.each do |product| %>
+    <tr class="product">
+      <td><%= link_to product.name, resource(product) %></td>
+      <td><%= product.sku %></td>
+      <td><%= product.aisle %>-<%= product.bin %></td>
+      <td><%= product.inventory %></td>
+      
+      <td><%= link_to "Edit", resource(product, :edit) if current_user %></td>
+    </tr>
+  <% end %>
+</table>

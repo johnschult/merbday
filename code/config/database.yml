@@ -1,0 +1,15 @@
+---
+development: &defaults
+  adapter:  sqlite3
+  database: schema/house_development.db
+
+test:
+  <<:       *defaults
+  database: schema/house_test.db
+
+production:
+  <<:       *defaults
+  database: schema/production.db
+
+rake:
+  <<: *defaults

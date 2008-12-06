@@ -1,0 +1,13 @@
+<h1>Edit Product</h1>
+
+<%= form_for(@product, :action => resource(@product)) do %>
+  <%= text_field :name, :label => "Name" %><br />
+  <%= text_field :sku, :label => "SKU" %><br />
+  
+  <%= text_field :aisle, :label => "Aisle" %><br />
+  <%= text_field :bin, :label => "Bin" %><br />
+  
+  <%= text_field :inventory, :label => "Inventory" %><br />
+  
+  <%= submit "Save" %>
+<% end =%>

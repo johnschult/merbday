@@ -1,0 +1,9 @@
+<div id="menu">
+  <% if current_user %>
+    <%= link_to "Products", resource(:products) %> |
+    <%= link_to "Logout", url(:logout) %>
+  <% else %>
+    <%= link_to "Signup", resource(:users, :new) %> |
+    <%= link_to "Login", url(:login) %>
+  <% end %>
+</div>
