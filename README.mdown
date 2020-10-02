@@ -8,3 +8,4 @@ after the completion of Tutorial 7.
 - All of the ERB tamplates have been translated into HAML.
 - The **master.css** files has been converted to SASS and
 placed in the *public/stylesheets/sass* directory.
+I want t shirts
